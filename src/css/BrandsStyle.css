@@ -1,0 +1,33 @@
+#brands-section{
+        color: black;
+}
+
+#brands-section h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-family:Verdana;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-right: auto;margin-left: auto;
+}
+
+.brands div{
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
