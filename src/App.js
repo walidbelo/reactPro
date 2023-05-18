@@ -5,6 +5,12 @@ import Home from "./Home";
 import "./css/HeaderStyle.css";
 import "./App.css"
 import Shop from "./shop";
+import RegisterPage from "./RegisterPage";
+import LoginPage from "./LoginPage";
+import Men from "./categories/Men";
+import Women from "./categories/Women";
+import Kids from "./categories/Kids";
+import Accessories from "./categories/accessories";
 //import Test from "./Test";
 
 
@@ -20,7 +26,7 @@ function App() {
        <nav className="navbar">
         
         <ul className="navbar-menu">
-            <li className="navbar-item"><Link to="Home">Home</Link></li>
+            <li className="navbar-item"><Link to="/Home">Home</Link></li>
             <li className="navbar-item"><Link to="/Shop">Shop</Link></li>
             <li className="navbar-item"><Link to="">About</Link></li>
         </ul>
@@ -34,6 +40,7 @@ function App() {
                 <input className="search-input" type="text" name="query" placeholder="Search"/>
                 <button className="search-button" type="submit">Search</button>
             </form>
+            <div className="loginArea"><button className="loginB"><Link to="Login">Login</Link></button><button className="registerB"><Link to="Register">Register</Link></button></div>
         </div>
     </nav>
      </header>
@@ -43,10 +50,15 @@ function App() {
       <Route path="/" element={<LandingPage /> }       />
       <Route path="/Home" element={<Home /> }       />
       <Route path="/Shop" element={<Shop /> }       />
+      <Route path="/Register" element={<RegisterPage /> }       />
+      <Route path="/Login" element={<LoginPage /> }       />
+      <Route path="/Men" element={<Men /> }       />
+      <Route path="/Women" element={<Women /> }       />
+      <Route path="/Kids" element={<Kids /> }       />
+      <Route path="/Accessories" element={<Accessories /> }       />
    
       </Routes></div>
     </div>
   );
 }
-
 export default App;

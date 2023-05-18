@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+ import './css/RegisterPage.css';
 export default function RegisterPage() {
 
     const [state , setState] = React.useState({
@@ -32,43 +33,51 @@ const HandlSubmit = (eo) => {
 };
 
   return (
-    <form onSubmit={(eo) => { HandlSubmit(eo) }}>
-        <label>Name</label>
-        <input type='text'  name='FisrtName' value={state.FisrtName} onChange={(e) => { SaveData(e) } } /> <br/> <br/>
+    // <div className="container">
+    
+    <div className="screen__contentR">
+    <form onSubmit={(eo) => { HandlSubmit(eo) }} className="Resgister">
+        <div className='inputs'>
+        
+        <div className="login__fieldR"><input type='text' placeholder='First name' className="login__inputR" name='FisrtName' value={state.FisrtName} onChange={(e) => { SaveData(e) } } /></div> <br/> <br/>
 
-        <label>Last Name</label>
-        <input type='text'  name='LastName' value={state.LastName} onChange={(e) => { SaveData(e) } }/><br/> <br/>
+        
+        <div className="login__fieldR"> <input type='text' placeholder='Last name' className="login__inputR" name='LastName' value={state.LastName} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
 
-        <label>UserName</label>
-        <input type='text' name='UserName' value={state.UserName} onChange={(e) => { SaveData(e) } }/><br/> <br/>
+        
+        <div className="login__fieldR"><input type='text' placeholder='Username' className="login__inputR" name='UserName' value={state.UserName} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
 
-        <label>Email</label>
-        <input type='email' name='Email' value={state.Email} onChange={(e) => { SaveData(e) } }/><br/> <br/>
+        
+        <div className="login__fieldR"> <input type='email' placeholder='Email' className="login__inputR" name='Email' value={state.Email} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
 
-        <label>Password</label>
-        <input type='password' name='pass' value={state.pass} onChange={(e) => { SaveData(e) } }/><br/> <br/>
+        
+        <div className="login__fieldR"> <input type='password' placeholder='Password' className="login__inputR" name='pass' value={state.pass} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
 
-        <label >country</label>
-        <select value={state.country} name="country" onChange={(e) => { SaveData(e) } }>
+        <label >country:</label>
+        <div className="login__fieldR"> <select value={state.country} className="login__inputR" name="country" onChange={(e) => { SaveData(e) } }>
             <option value="Morocco">Morocco</option>
             <option value="USA">USA</option>
-        </select> <br/> <br/>
+        </select></div> <br/> <br/>
 
-        <label>adress</label>
-        <input type='text' name='adress' value={state.adress} placeholder='street N°12....' onChange={(e) => { SaveData(e) } } /><br/> <br/>
+        
+        <div className="login__fieldR"><input type='text' className="login__inputR" name='adress' value={state.adress} placeholder='Adress' onChange={(e) => { SaveData(e) } } /></div><br/> <br/>
 
-        <label>Phone Number</label>
-        <input type='tel' name='tele' value={state.tele} onChange={(e) => { SaveData(e) } } /><br/> <br/>
+        
+        <div className="login__fieldR"><input type='tel' className="login__inputR" placeholder='Phone Number' name='tele' value={state.tele} onChange={(e) => { SaveData(e) } } /></div><br/> <br/>
 
-        <label htmlFor="city" >city</label>
-        <select value={state.city} id='city' name="city" onChange={(e) => { SaveData(e) } }>
+        <label htmlFor="city" >city:</label>
+        <div className="login__fieldR"><select value={state.city} id='city' className="login__inputR" name="city" onChange={(e) => { SaveData(e) } }>
             <option value="Temara">Temara</option>
             <option value="Rabat">Rabat</option>
-        </select>
+        </select></div>
 
-        <input type='submit' value="submit" />
+        <input type='submit' className='login__submitR' value="submit" />
+        </div>
     </form>
-      
+     </div> 
+     
+ 
+//  </div>
   )
 
 }

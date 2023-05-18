@@ -3,7 +3,7 @@ import React from 'react'
  import Main from './Main'
  import Brands from './Brands'
  import Footer from './Footer'
- import Bio from './bio'
+ //import Bio from './bio'
 import './css/Home.css';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
   
     <div className='home'>
           <Main/>
-          <Bio/>
+          
         <Brands/>
        <Footer/>
     </div>

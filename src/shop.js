@@ -1,29 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './css/shop.css'
 import './css/ProductStyle.css'
 //import image from './images/womenimage.jpg'
-import products from './ProductsArray';
+import Men from './categories/Men';
+
+//import products from './ProductsArray';
+//import CateHead from './CategoriesHeader';
 
 export default function Shop(){
     return(
-        <div className='main-shop'>
-            <div>
-            <header>
-       <nav className="navbarS">
-        
-        
-        
-        <ul className="navbar-menuS">
-            <li className="navbar-itemS"><Link to="Home">Men</Link></li>
-            <li className="navbar-itemS"><Link to="">Women</Link></li>
-            <li className="navbar-itemS"><Link to="">Kids</Link></li>
-            <li className="navbar-itemS"><Link to="">Accessories</Link></li>
-        </ul>
-        </nav>
-        </header>
-        </div>
-        <div>
+        <div >
+            {/* <CateHead/> */}
+            <Men/>
+        {/* <div>
             <p className='SCName'>T-shirts</p>
         </div>
         <div className='sousCategorie'>
@@ -46,9 +36,9 @@ export default function Shop(){
         <div className="color-price">
         <span className="shoe_name">{x['product-name']}</span>
             <div className="price">
-                <span className="price_num">${x['product-price']}</span>
+                <span className="price_num">${x['product-price']}</span> */}
                 {/* <span className="price_letter">Nine dollar only</span> */}
-            </div>
+            {/* </div>
             </div>
         </div>
         <div className="button">
@@ -61,7 +51,7 @@ export default function Shop(){
                 }
             )}
         </div>
-        </div>
+        </div> */}
         </div>
     )
 }
