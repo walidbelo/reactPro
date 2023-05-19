@@ -3,6 +3,7 @@ import products from '../ProductsArray';
 import '../css/ProductStyle.css'
 import '../css/shop.css'
 import CateHead from '../CategoriesHeader';
+import { Link } from "react-router-dom";
 
 export default function Men(){
 
@@ -24,16 +25,16 @@ export default function Men(){
         </div> 
         <div className="content1">
         <div className="main-images">
-            <img id="blue" className="blue active"
-                src={x['product-image']}
-                alt="blue" />
+         <Link to={`/product/${x.productName}`}> <img id="blue" className="blue active"
+                src={x.productImage}
+                alt="blue" /></Link>
         </div>
        </div>
        <div className="content2">
         <div className="color-price">
-        <span className="shoe_name">{x['product-name']}</span>
+        <span className="shoe_name">{x.productName}</span>
             <div className="price">
-                <span className="price_num">${x['product-price']}</span>
+                <span className="price_num">${x.productPrice}</span>
                 {/* <span className="price_letter">Nine dollar only</span> */}
             </div>
             </div>

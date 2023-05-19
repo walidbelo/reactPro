@@ -200,6 +200,7 @@
     margin-left: 200px;
     margin-top: 15px;
 }
+
 .login__fieldR {
 	padding: 5px;	
 	position: relative;	
@@ -220,6 +221,9 @@
 	outline: none;
 	border-bottom-color: #6A679E;
 }
+.login__inputR::placeholder{
+	color: white;
+}
 .login__submitR {
 	background: #fff;
 	font-size: 14px;
@@ -236,6 +240,7 @@
 	box-shadow: 0px 2px 2px #5C5696;
 	cursor: pointer;
 	transition: .2s;
+	justify-content: center;
 }
 
 .login__submitR:active,

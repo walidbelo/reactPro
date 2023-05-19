@@ -1,41 +1,41 @@
 const  products= [
     {
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
 } ,
 
 {
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
-} ,
-
-
-{
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
-} ,
-
-{
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
 } ,
 
 
 {
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
+} ,
+
+{
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
 } ,
 
 
 {
-    "product-name":"ADDIDAS GAZE ZX",
-    "product-price":"500.00",
-    "product-image":require("./images/womenimage.jpg")
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
+} ,
+
+
+{
+    productName:"ADDIDAS GAZE ZX",
+    productPrice:"500.00",
+    productImage:require("./images/womenimage.jpg")
 } 
 ]
 export default products
