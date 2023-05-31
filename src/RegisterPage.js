@@ -71,7 +71,7 @@ const HandlSubmit = (eo) => {
             <option value="Rabat">Rabat</option>
         </select></div>
 
-        <input type='submit' className='login__submitR' value="submit" />
+        <input type='submit' className='login__submitR' value="Register" />
         </div>
     </form>
      </div> 

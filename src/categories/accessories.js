@@ -2,12 +2,14 @@ import React from "react";
 import products from '../ProductsArray';
 import '../css/ProductStyle.css'
 import '../css/shop.css'
-import CateHead from '../CategoriesHeader';
+import SCnavbar from '../ShopCatNavBar';
+
+
 
 export default function Accessories(){
 
     return(<div className='main-shop'>
-    <CateHead/>
+    <SCnavbar/>
     
     <div className="mainMen">
         <div>

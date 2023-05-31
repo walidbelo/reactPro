@@ -1,13 +1,15 @@
 import React from "react";
 import products from '../ProductsArray';
 import '../css/ProductStyle.css'
-import '../css/shop.css'
-import CateHead from '../CategoriesHeader';
+import '../css/shop.css';
+import SCnavbar from '../ShopCatNavBar';
+
+//import CateHead from '../CategoriesHeader';
 
 export default function Kids(){
 
     return(<div className='main-shop'>
-    <CateHead/>
+    <SCnavbar/>
     
     <div className="mainMen">
         <div>

@@ -2,8 +2,13 @@ import React from 'react';
 //import { Link } from 'react-router-dom';
 import './css/shop.css'
 import './css/ProductStyle.css'
+//import Cart from './Cart';
 //import image from './images/womenimage.jpg'
+import {BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Men from './categories/Men';
+import Women from "./categories/Women";
+import Kids from "./categories/Kids";
+import Accessories from "./categories/accessories";
 
 //import products from './ProductsArray';
 //import CateHead from './CategoriesHeader';
@@ -12,7 +17,36 @@ export default function Shop(){
     return(
         <div >
             {/* <CateHead/> */}
-            <Men/>
+          
+            {/* <nav className="navbarS">
+        
+        
+        
+        <ul className="navbar-menuS">
+            <li className="navbar-itemS"><Link to="/Men">Men</Link></li>
+            <li className="navbar-itemS"><Link to="/Women">Women</Link></li>
+            <li className="navbar-itemS"><Link to="/Kids">Kids</Link></li>
+            <li className="navbar-itemS"><Link to="/Accessories">Accessories</Link></li>
+        </ul>
+        </nav> */}
+  <Men/>
+
+
+
+<div>
+    
+            {/* <Routes> */}
+      
+      {/* <Route path="/Shop" element={<Shop /> }/> */}
+      
+      {/* <Route path="/Men" element={<Men/> }       />
+      <Route path="/Women" element={<Women /> }/>
+      <Route path="/Kids" element={<Kids /> }/>
+      <Route path="/Accessories" element={<Accessories /> }/>
+      
+      </Routes> */}
+      
+      </div>
         {/* <div>
             <p className='SCName'>T-shirts</p>
         </div>

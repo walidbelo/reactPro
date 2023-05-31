@@ -1,6 +1,7 @@
 import React from "react"
 import { useState } from "react";
-import products from "./ProductsArray";
+import Men from "./categories/Men";
+//import products from "./ProductsArray";
 
 export default function Cart(){
     const [panier, setPanier] = useState([]);
@@ -12,6 +13,7 @@ export default function Cart(){
           alert(" ce produit exite déjà dans votre panier")
       
       }
+      return(
     <div className="CartArea">
         <h4>Your Cart:</h4>
         <div>
@@ -28,4 +30,4 @@ export default function Cart(){
        {    return    som+=(p.productPrice) ;},0)}   dhs</h3>
         </div>
     </div>
-}
+)}

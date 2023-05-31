@@ -172,3 +172,13 @@
     color:lightskyblue;
     border-bottom: 2px lightskyblue solid;
   }
+  .cartlogo{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    border: none;
+  border-radius: 0;
+  transform: none;
+  outline: none;
+  }
+  

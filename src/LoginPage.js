@@ -1,5 +1,6 @@
 import React from "react";
 import './css/LoginPage.css';
+import { Link } from "react-router-dom";
 export default function LoginPage(){
     return(
         <div className="allL">
@@ -18,7 +19,8 @@ export default function LoginPage(){
 				<button className="button login__submit">
 					<span className="button__text">Log In Now</span>
 					<i className="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>	
+				<p className="RegisterReq">new to MATALAN ?  <Link to="/Register" className="linkReg">Register here</Link></p>			
 			</form>
 			{/* <div className="social-login">
 				<h3>log in via</h3>

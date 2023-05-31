@@ -14,10 +14,10 @@ function Footer() {
       <div class="footer-column">
         <h4>Categories</h4>
         <ul>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Kids</a></li>
-          <li><a href="#">Accessories</a></li>
+          <li><Link>Women</Link></li>
+          <li><Link>Men</Link></li>
+          <li><Link>Kids</Link></li>
+          <li><Link>Accessories</Link></li>
         </ul>
       </div>
       <div class="footer-column">

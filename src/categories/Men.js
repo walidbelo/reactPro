@@ -2,14 +2,20 @@ import React from "react";
 import products from '../ProductsArray';
 import '../css/ProductStyle.css'
 import '../css/shop.css'
-import CateHead from '../CategoriesHeader';
+//import CateHead from '../CategoriesHeader';
 import { Link } from "react-router-dom";
 
-export default function Men(){
+import SCnavbar from '../ShopCatNavBar';
+//import CheckPanier from "../Cart";
 
-    return(<div className='main-shop'>
-    <CateHead/>
+export default function Men(props){
+    function CheckPanier(p)
+    {
+      props.AjouterAuPanier(p)
+    }
     
+    return(<div className='main-shop'>
+    <SCnavbar/>
     <div className="mainMen">
         <div>
             <p className='SCName'>T-shirts</p>
@@ -24,11 +30,11 @@ export default function Men(){
             <p>MATALAN</p>
         </div> 
         <div className="content1">
-        <div className="main-images">
-         <Link to={`/product/${x.productName}`}> <img id="blue" className="blue active"
+       <Link to={`/product/${x.productName}`}> <div className="main-images">
+          <img id="blue" className="blue active"
                 src={x.productImage}
-                alt="blue" /></Link>
-        </div>
+                alt="blue" />
+        </div></Link>
        </div>
        <div className="content2">
         <div className="color-price">
@@ -41,7 +47,7 @@ export default function Men(){
         </div>
         <div className="button">
             <div className="button-layer"></div>
-            <button>Add To Cart</button>
+            <button onClick={()=>{CheckPanier(x)}}>Add To Cart</button>
         </div>
         
     </div>
