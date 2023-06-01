@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
 
- 
-
   return (
    
      <header>
        <nav className="navbar">
-        
-        
-        
         <ul className="navbar-menu">
             <li className="navbar-item"><Link to="Home">Home</Link></li>
             <li className="navbar-item"><Link to="">Shop</Link></li>

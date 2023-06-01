@@ -45,7 +45,7 @@ const HandlSubmit = (eo) => {
         <div className="login__fieldR"> <input type='text' placeholder='Last name' className="login__inputR" name='LastName' value={state.LastName} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
 
         
-        <div className="login__fieldR"><input type='text' placeholder='Username' className="login__inputR" name='UserName' value={state.UserName} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
+        
 
         
         <div className="login__fieldR"> <input type='email' placeholder='Email' className="login__inputR" name='Email' value={state.Email} onChange={(e) => { SaveData(e) } }/></div><br/> <br/>
@@ -65,11 +65,11 @@ const HandlSubmit = (eo) => {
         
         <div className="login__fieldR"><input type='tel' className="login__inputR" placeholder='Phone Number' name='tele' value={state.tele} onChange={(e) => { SaveData(e) } } /></div><br/> <br/>
 
-        <label htmlFor="city" >city:</label>
+        {/* <label htmlFor="city" >city:</label>
         <div className="login__fieldR"><select value={state.city} id='city' className="login__inputR" name="city" onChange={(e) => { SaveData(e) } }>
             <option value="Temara">Temara</option>
             <option value="Rabat">Rabat</option>
-        </select></div>
+        </select></div> */}
 
         <input type='submit' className='login__submitR' value="Register" />
         </div>

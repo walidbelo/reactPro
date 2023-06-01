@@ -1,33 +1,41 @@
-import React from "react"
-import { useState } from "react";
-import Men from "./categories/Men";
-//import products from "./ProductsArray";
-
+import React, { useContext } from "react"
+import products from "./ProductsArray";
+import { ShopContext } from "./shop-context";
+import { CartItem } from "./cartItem";
+import { useNavigate } from "react-router-dom";
+import "./css/CartStyle.css";
 export default function Cart(){
-    const [panier, setPanier] = useState([]);
-
-    function CheckPanier(p){
-        if ( panier.find(x=>x.id===p.id)==null)
-        setPanier([...panier, p])
-          else 
-          alert(" ce produit exite déjà dans votre panier")
-      
-      }
+    const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+    const totalAmount = getTotalCartAmount();
+  
+    const navigate = useNavigate(); 
       return(
     <div className="CartArea">
         <h4>Your Cart:</h4>
         <div>
             {
-                panier.map((n)=>{return(<div>
-                <li>{n.productName}</li>
-                <li>{n.productPrice}</li>
-                </div>
-               )} )
+                products.map((n) => {
+                    if(cartItems[n.id] !== 0){
+                        return <CartItem data={n}/>
+                    }} )
             }
         </div>
-        <div className="total">
-          <h3>{panier.reduce ((som, p)=>
-       {    return    som+=(p.productPrice) ;},0)}   dhs</h3>
+        {totalAmount > 0 ? (
+        <div className="checkout">
+          <p> Subtotal: ${totalAmount} </p>
+          <button onClick={() => navigate("/Men")}> Continue Shopping </button>
+          <button
+            onClick={() => {
+              checkout();
+              navigate("/checkout");
+            }}
+          >
+            {" "}
+            Clear{" "}
+          </button>
         </div>
+      ) : (
+        <h1> Your Shopping Cart is Empty</h1>
+      )}
     </div>
 )}

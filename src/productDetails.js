@@ -12,7 +12,7 @@ export default function ProductD(){
          <Product productName={ProduitTrouvé.productName}
          productImage={ProduitTrouvé.productImage} productPrice={ProduitTrouvé.productPrice}  />
                :"aucun produit trouvé"}
-    <Link to='/Shop'> retour à la page d'accueil</Link>
+    <Link to='/Men'> retour to shop</Link>
         </div>
     )
 }

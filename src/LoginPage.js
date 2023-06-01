@@ -3,8 +3,8 @@ import './css/LoginPage.css';
 import { Link } from "react-router-dom";
 export default function LoginPage(){
     return(
-        <div className="allL">
-            <div className="container">
+        
+            <div className="containerL">
 	<div className="screen">
 		<div className="screen__content">
 			<form className="login">
@@ -22,14 +22,7 @@ export default function LoginPage(){
 				</button>	
 				<p className="RegisterReq">new to MATALAN ?  <Link to="/Register" className="linkReg">Register here</Link></p>			
 			</form>
-			{/* <div className="social-login">
-				<h3>log in via</h3>
-				<div className="social-icons">
-					<a href="#" className="social-login__icon fab fa-instagram"></a>
-					<a href="#" className="social-login__icon fab fa-facebook"></a>
-					<a href="#" className="social-login__icon fab fa-twitter"></a>
-				</div>
-			</div> */}
+			
 		</div>
 		<div className="screen__background">
 			<span className="screen__background__shape screen__background__shape4"></span>
@@ -39,6 +32,6 @@ export default function LoginPage(){
 		</div>		
 	</div>
 </div>
-        </div>
+        
     )
 }

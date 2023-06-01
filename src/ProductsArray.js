@@ -1,41 +1,47 @@
 const  products= [
     {
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
+        id:1,
+    productName:"Gray Tshirt",
+    productPrice:"150.00",
+    productImage:"./products-images/men_tshirts/Tshirt1.jpg"
 } ,
 
 {
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
-} ,
-
-
-{
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
-} ,
-
-{
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
+    id:2,
+    productName:"Darkblue Tshirt",
+    productPrice:"150.00",
+    productImage:"./products-images/men_tshirts/Tshirt2.jpg"
 } ,
 
 
 {
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
+    id:3,
+    productName:"Grey Tshirt(never)",
+    productPrice:"200.00",
+    productImage:"./products-images/Tshirt3.jpg"
+} ,
+
+{
+    id:4,
+    productName:"white Tshirt",
+    productPrice:"150.00",
+    productImage:"./products-images/Tshirt4.jpg"
 } ,
 
 
 {
-    productName:"ADDIDAS GAZE ZX",
-    productPrice:"500.00",
-    productImage:require("./images/womenimage.jpg")
+    id:5,
+    productName:"Pink Tshit",
+    productPrice:"200.00",
+    productImage:"./products-images/Tshirt5.jpg"
+} ,
+
+
+{
+    id:6,
+    productName:"lightGreen Tshirt",
+    productPrice:"250.00",
+    productImage:"./products-images/Tshirt6.jpg"
 } 
 ]
 export default products

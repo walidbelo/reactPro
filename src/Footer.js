@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer class="site-footer">
-  <div class="container">
-    <div class="footer-columns">
-      <div class="footer-column">
+    <footer className="site-footer">
+  <div className="containerF">
+    <div className="footer-columns">
+      <div className="footer-column">
         <h4>About Us</h4>
         <p>We are a team of passionate fashion enthusiasts who want to bring the latest trends to your wardrobe.</p>
       </div>
-      <div class="footer-column">
+      <div className="footer-column">
         <h4>Categories</h4>
         <ul>
           <li><Link>Women</Link></li>
@@ -20,17 +20,17 @@ function Footer() {
           <li><Link>Accessories</Link></li>
         </ul>
       </div>
-      <div class="footer-column">
+      <div className="footer-column">
         <h4>Contact Us</h4>
         <ul>
-          <li>123 Main Street</li>
-          <li>New York, NY 10001</li>
-          <li>info@store.com</li>
-          <li>(123) 456-7890</li>
+          <li>Temara</li>
+          <li>Massira 2, CP 10000</li>
+          <li>info@MATALAN.com</li>
+          <li>+212 675094939</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div className="footer-bottom">
       <p>&copy; 2023 MATALAN. All rights reserved.</p>
     </div>
   </div>
