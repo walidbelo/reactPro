@@ -54,8 +54,7 @@ axios.post(`http://localhost:8000/api/login/`, data)
 					<i className="button__icon fas fa-chevron-right"></i>
 				</button>	
 				<p className="RegisterReq">new to MATALAN ?  <Link to="/Register" className="linkReg">Register here</Link></p>			
-			</form>
-			
+			</form>		
 		</div>
 		<div className="screen__background">
 			<span className="screen__background__shape screen__background__shape4"></span>

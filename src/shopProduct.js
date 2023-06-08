@@ -9,6 +9,7 @@ export default function ShopProduct(props){
     const{addToCart,cartItems}=useContext(ShopContext);
     const {id,productName,productImage,productPrice}=props.data;
     const cartItemsAmount=cartItems[id];
+    console.log(productImage)
     return(
         <div  className="product-card">
         <div className="logo-cart">

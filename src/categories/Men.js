@@ -4,7 +4,14 @@ import '../css/ProductStyle.css'
 import '../css/shop.css'
 import ShopProduct from "../shopProduct";
 import SCnavbar from '../ShopCatNavBar';
+
+
+
+
 export default function Men(){
+
+
+
     return(<div className='main-shop'>
     <SCnavbar/>
     <div className="mainMen">

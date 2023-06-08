@@ -1,5 +1,5 @@
 import React from "react";
-import products from '../ProductsArray';
+import products from '../ProductWomen';
 import '../css/ProductStyle.css'
 import '../css/shop.css';
 import SCnavbar from '../ShopCatNavBar';
@@ -17,8 +17,8 @@ export default function Women(){
         </div>
         <div className='sousCategorie'>
             
-        <div className='productsArr'>  {products.map((product)=>(
-                   <ShopProduct data={product}/>
+        <div className='productsArr'>  {products.map((product , index)=>(
+                   <ShopProduct key={index} data={product}/>
                 )
             )}
         </div>
